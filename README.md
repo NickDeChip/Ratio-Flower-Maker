@@ -6,6 +6,6 @@ This is a cool image that uses ratios to create shapes and patterns
 
 | Input | Output |
 | ----- | ------ |
-| scrolling | chages ratio |
+| scrolling | changes ratio |
 | Key G | set ratio to phi |
 | Key P | set ratio to pi |

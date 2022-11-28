@@ -8,7 +8,7 @@ import (
 )
 
 const (
-	winScl         = 1080
+	winScl         = 800
 	screenCenter   = winScl / 2
 	spokesRadius   = 10
 	startingRadius = 10
@@ -49,6 +49,16 @@ func update() {
 	if mouseWheelMove != 0 {
 		radius = startingRadius
 		ratio += float64(mouseWheelMove * 0.00025)
+		generateSpokes()
+	}
+	if rl.IsKeyPressed(rl.KeyG) {
+		radius = startingRadius
+		ratio = math.Phi
+		generateSpokes()
+	}
+	if rl.IsKeyPressed(rl.KeyP) {
+		radius = startingRadius
+		ratio = math.Pi
 		generateSpokes()
 	}
 }
